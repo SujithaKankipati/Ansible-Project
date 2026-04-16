@@ -92,7 +92,7 @@ ansible-playbook -i inventory/hosts.ini site.yml
 
 Access the application in your browser:
 
-http://<web-server-public-ip>
+**http://<web-server-public-ip>**
 
 You should see:
 
