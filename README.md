@@ -8,11 +8,7 @@ This project demonstrates automated provisioning of a multi-tier web application
 
 ## 🏗️ Architecture
 
-Client (Browser)
-        ↓
-Web Server (Apache)
-        ↓
-Database Server (MySQL)
+Client (Browser) -> Web Server (Apache) -> Database Server (MySQL)
 
 * **Web Server**: Hosts the website using Apache
 * **Database Server**: Runs MySQL for backend storage
@@ -31,26 +27,6 @@ Database Server (MySQL)
 * AWS EC2 (for hosting)
 
 ---
-
-## 📁 Project Structure
-
-Ansible-Project/
-│
-├── inventory/
-│   ├── .gitignore
-│   └── hosts.ini.example
-│
-├── group_vars/
-│   └── all.yml
-│
-├── roles/
-│   ├── common/
-│   ├── web/
-│   ├── db/
-│   └── app/
-│
-├── site.yml
-└── README.md
 
 ## ⚙️ Roles Description
 
@@ -99,11 +75,13 @@ Ansible-Project/
 ### 1. Clone the repository
 
 git clone https://github.com/SujithaKankipati/Ansible-Project.git
+
 cd Ansible-Project
 
 ### 2. Create your inventory file
 
 cp inventory/hosts.ini.example inventory/hosts.ini
+
 Update it with your server IPs.
 
 ### 3. Run the playbook
