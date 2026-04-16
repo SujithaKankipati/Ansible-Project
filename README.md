@@ -91,10 +91,13 @@ ansible-playbook -i inventory/hosts.ini site.yml
 ## 🌐 Output
 
 Access the application in your browser:
+
 http://<web-server-public-ip>
 
 You should see:
+
 My Ansible Project
+
 Deployed using Ansible
 
 ## 🧠 Concepts Demonstrated
