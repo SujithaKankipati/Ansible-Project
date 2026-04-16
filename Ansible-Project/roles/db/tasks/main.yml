@@ -1,0 +1,12 @@
+---
+# tasks file for db
+- name: Install MySQL
+  apt:
+    name: mysql-server
+    state: present
+
+- name: Start MySQL
+  service:
+    name: mysql
+    state: started
+    enabled: yes

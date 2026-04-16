@@ -1,0 +1,12 @@
+---
+# tasks file for common
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install common tools
+  apt:
+    name:
+      - curl
+      - git
+    state: present
